@@ -19,7 +19,7 @@ const jwt = require('jsonwebtoken');
 // Load middleware
 app.use(bodyParser.json());
 
-var distDir = __dirname + "/dist/";
+var distDir = __dirname + "/dist/frontend";
 app.use(express.static(distDir));
 
 // CORS HEADERS MIDDLEWARE
