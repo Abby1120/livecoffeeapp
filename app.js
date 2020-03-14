@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 const { mongoose } = require('./db/mongoose');
-const port = process.env.PORT || 8080;
+
 
 const bodyParser = require('body-parser');
 
@@ -388,6 +388,6 @@ let deleteCoffeeFromRoaster = (_roasterId) => {
 
 
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Server is listening on port" +port);
 })
