@@ -22,7 +22,8 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/dist/frontend'));
 
 app.get('*', function(req,res) {
-    res.sendFile(path.join(__dirname + '/dist/frontend/index.html'));
+    const index = path.join(__dirname, 'build', 'index.html');
+    res.sendFile(index);
   });
 
 // CORS HEADERS MIDDLEWARE
