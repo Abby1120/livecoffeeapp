@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
+
 const { mongoose } = require('./db/mongoose');
 
 
@@ -18,6 +19,8 @@ const jwt = require('jsonwebtoken');
 // Load middleware
 app.use(bodyParser.json());
 
+var distDir = __dirname + "/dist/";
+app.use(express.static(distDir));
 
 // CORS HEADERS MIDDLEWARE
 app.use(function (req, res, next) {
