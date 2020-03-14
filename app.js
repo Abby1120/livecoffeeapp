@@ -20,7 +20,7 @@ const jwt = require('jsonwebtoken');
 app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/dist/frontend'));
-res.sendFile(path.join(__dirname+'/dist/frontend/index.html'));
+res.sendFile(path.join(`${__dirname}/dist/frontend/index.html`));
 
 // CORS HEADERS MIDDLEWARE
 app.use(function (req, res, next) {

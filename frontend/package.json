@@ -1,6 +1,9 @@
 {
   "name": "frontend",
   "version": "0.0.0",
+  "engines": {
+    "node": "12.14.x"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -51,9 +54,5 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0"
-  },
-  "engines": {
-    "node": "12.14.x",
-    "npm": "6.13.x"
   }
 }
