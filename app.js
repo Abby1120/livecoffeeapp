@@ -389,5 +389,5 @@ let deleteCoffeeFromRoaster = (_roasterId) => {
 
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log("Server is listening on port" +port);
+    console.log("Server is listening on port");
 })
