@@ -19,10 +19,9 @@ const jwt = require('jsonwebtoken');
 // Load middleware
 app.use(bodyParser.json());
 
-app.use(express.static(__dirname + '/dist/frontend'));
+app.use(express.static(_dirname + '/dist/frontend'));
 
 app.get('*', function(req,res) {
-    // Replace the '/dist/<to_your_project_name>/index.html'
     res.sendFile(path.join(__dirname + '/dist/frontend/index.html'));
   });
 
