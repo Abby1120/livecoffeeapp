@@ -19,8 +19,8 @@ const jwt = require('jsonwebtoken');
 // Load middleware
 app.use(bodyParser.json());
 
-var distDir = __dirname + "/dist/frontend/";
-app.use(express.static(distDir));
+app.use(express.static(__dirname + '/dist/frontend'));
+res.sendFile(path.join(__dirname+'/dist/frontend/index.html'));
 
 // CORS HEADERS MIDDLEWARE
 app.use(function (req, res, next) {
