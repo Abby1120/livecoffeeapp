@@ -6,7 +6,7 @@ const { mongoose } = require('./db/mongoose');
 
 const bodyParser = require('body-parser');
 
-app.use(express.static(_dirname+'/frontend'));
+// app.use(express.static(_dirname+'/frontend'));
 // Load in the mongoose models
 const { Roaster, Coffee, User } = require('./db/models');
 
