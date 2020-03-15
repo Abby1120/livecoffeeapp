@@ -7,7 +7,6 @@ const { mongoose } = require('./db/mongoose');
 
 const bodyParser = require('body-parser');
 
-// app.use(express.static(_dirname+'/frontend'));
 // Load in the mongoose models
 const { Roaster, Coffee, User } = require('./db/models');
 
@@ -21,17 +20,13 @@ app.use(bodyParser.json());
 
 app.use(express.static('frontend/dist'));
 
-// app.get('/', (req, res) => {
-//     res.send('invaild endpoint');
-//   });
-  
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/dist/frontend/index.html'));
+app.get('/', (req, res) => {
+    res.send('invaild endpoint');
   });
 
-// app.get('*', (req, res) => {
-// 	return res.sendFile(path.join(__dirname,+ '/frontend/dist/index.html'))
-// })
+app.get('*', (req, res) => {
+	return res.sendFile(path.join(__dirname,+ '/frontend/dist/index.html'))
+});
 
 // CORS HEADERS MIDDLEWARE
 app.use(function (req, res, next) {
