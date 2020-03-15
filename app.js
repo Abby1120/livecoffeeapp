@@ -25,8 +25,8 @@ app.use(express.static('frontend/dist'));
 //     res.send('invaild endpoint');
 //   });
   
-  app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend/dist/index.html'));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
   });
 
 // app.get('*', (req, res) => {
