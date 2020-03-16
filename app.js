@@ -18,7 +18,7 @@ const jwt = require('jsonwebtoken');
 // Load middleware
 app.use(bodyParser.json());
 
-app.use(express.static('frontend/dist'));
+app.use(express.static('frontend/dist/frontend'));
 
 app.get('*', (req, res) => {
     res.send('invaild endpoint');
