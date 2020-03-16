@@ -24,6 +24,10 @@ app.get('*', (req, res) => {
     res.send('invaild endpoint');
   });
 
+app.get('*', (req, res) => {
+    res.sendFile('frontend/dist/frontend/index.html')
+});
+
 
 // CORS HEADERS MIDDLEWARE
 app.use(function (req, res, next) {
