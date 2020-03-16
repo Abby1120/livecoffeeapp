@@ -1,13 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 // breakpoints should be set at 600, 900 and 1200 1800 if you like large screens
+@import 'assets/scss/modules/_fonts.scss';
+
 $tablet: 600px;
 $desktop: 700px;
 $navbar-padding-horizontal: .5rem;
 $navbar-padding-vertical: .2rem;
 $footer-background-color: rgb(0, 47, 108);
-$fontone: treasure map deadhand;
-$fonttwo: Vollkorn;
-$fonttitle: Rapscallion;
+$fontone: 'Treasure Map Deadhand';
+$fonttwo: 'Vollkorn';
+$fonttitle: 'Rapscallion V2';
 
 // Media Queries
 
@@ -23,9 +25,9 @@ $fonttitle: Rapscallion;
     }
   }
 
-@import url(https://db.onlinewebfonts.com/c/865c36580d109facdc620f0e080878b4?family=Treasure+Map+Deadhand);
-@import url(https://db.onlinewebfonts.com/c/766d679f3242fbf580362a9838c40083?family=Vollkorn);
-@import url(https://db.onlinewebfonts.com/c/a9832257c016de39e36d9aae510c1fd3?family=Rapscallion);
+// @import url(https://db.onlinewebfonts.com/c/865c36580d109facdc620f0e080878b4?family=Treasure+Map+Deadhand);
+// @import url(https://db.onlinewebfonts.com/c/766d679f3242fbf580362a9838c40083?family=Vollkorn);
+// @import url(https://db.onlinewebfonts.com/c/a9832257c016de39e36d9aae510c1fd3?family=Rapscallion);
 @import '../node_modules/bulma/bulma.sass';
 
 
